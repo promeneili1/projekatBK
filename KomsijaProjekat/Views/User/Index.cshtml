@@ -1,0 +1,27 @@
+﻿@model IEnumerable<KomsijaProjekat.Models.User>
+
+<h2>User List</h2>
+
+<!-- Link za dodavanje novog korisnika -->
+<a href="@Url.Action("Create", "User")" class="btn btn-primary">Add New User</a>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.Name</td>
+            <td>@user.Email</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = user.Id })
+                @Html.ActionLink("Delete", "Delete", new { id = user.Id })
+            </td>
+        </tr>
+    }
+</table>

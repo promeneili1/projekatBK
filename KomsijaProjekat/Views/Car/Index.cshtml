@@ -1,0 +1,34 @@
+@model IEnumerable<KomsijaProjekat.Models.Car>
+
+@{
+    ViewBag.Title = "Cars List";
+}
+
+<h2>Cars List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Brand</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model)
+        {
+            <tr>
+                <td>@car.Model</td>
+                <td>@car.Year</td>
+                <td>@car.Brand.Name</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = car.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = car.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.ActionLink("Create New Car", "Create", null, new { @class = "btn btn-primary" })

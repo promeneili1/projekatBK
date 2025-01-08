@@ -1,0 +1,5 @@
+﻿.card-img-top {
+    width: 100%;
+    height: 200px; /* Ograničava visinu slike */
+    object-fit: cover; /* Prilagođava sliku tako da zauzme celu veličinu kutije bez distorzije */
+}

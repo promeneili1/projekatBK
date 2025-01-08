@@ -1,0 +1,32 @@
+@model IEnumerable<KomsijaProjekat.Models.Brand>
+
+@{
+    ViewBag.Title = "Brands";
+}
+
+<h2>Brands</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var brand in Model)
+        {
+            <tr>
+                <td>@brand.Name</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = brand.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = brand.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

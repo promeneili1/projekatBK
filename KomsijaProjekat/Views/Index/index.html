@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS za slike u karticama */
+        .card-img-top {
+            width: 100%;
+            height: 200px; /* Ograničava visinu slike */
+            object-fit: cover; /* Prilagođava sliku tako da zauzme celu veličinu kutije bez distorzije */
+        }
+    </style>
+</head>
+<body id="body" class="bg-light text-dark">
+
+    <!-- Navigacija sa dugmadi za promenu teme -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/Index/Index">My App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Linkovi ka ostalim stranicama -->
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Car">Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Brand">Brands</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Product">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/User">Users</a></li>
+
+                    <!-- Provera da li je korisnik ulogovan -->
+                    <!-- Prikaz email-a ulogovanog korisnika -->
+                    <li class="nav-item">
+                        <span class="navbar-text ms-3 text-success">
+                            <!-- Prikaz email-a korisnika -->
+                        </span>
+                    </li>
+                    <!-- Logout dugme -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/User/Logout">Logout</a>
+                    </li>
+                    }
+                    else
+                    {
+                    <!-- Ako nije ulogovan, prikazuje Login dugme -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/User/Login">Login</a>
+                    </li>
+                    }
+
+                    <!-- Dugmadi za promenu teme -->
+                    <li class="nav-item">
+                        <button id="theme1Btn" class="btn btn-light me-2" onclick="changeTheme('theme1')">Tema 1</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="theme2Btn" class="btn btn-dark" onclick="changeTheme('theme2')">Tema 2</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Welcome to My Website</h1>
+            <p class="lead">Explore our amazing content and services</p>
+            <a href="about.html" class="btn btn-light btn-lg">Learn More</a>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Features</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1652509328308-7f0d7804e678?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Volkswagen Polo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Volkswagen Polo</h5>
+                            <p class="card-text">Compact and efficient, offering a great balance of performance and comfort.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1703794451226-62b127cda2ca?q=80&w=1767&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Ford">
+                        <div class="card-body">
+                            <h5 class="card-title">Ford</h5>
+                            <p class="card-text">American made for comfort and performance, with a rich history.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1651569243425-521002b9054d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Mercedes-Benz">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes-Benz</h5>
+                            <p class="card-text">Luxury and innovation combined, offering top-tier performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Funkcija za promenu teme
+        function changeTheme(theme) {
+            const body = document.getElementById('body');
+            const navbar = document.querySelector('.navbar');
+            const footer = document.querySelector('footer');
+
+            if (theme === 'theme1') {
+                body.classList.remove('bg-dark', 'text-light');
+                body.classList.add('bg-light', 'text-dark');
+                navbar.classList.remove('bg-dark');
+                navbar.classList.add('bg-primary');
+                footer.classList.remove('bg-dark');
+                footer.classList.add('bg-primary');
+            } else if (theme === 'theme2') {
+                body.classList.remove('bg-light', 'text-dark');
+                body.classList.add('bg-dark', 'text-light');
+                navbar.classList.remove('bg-primary');
+                navbar.classList.add('bg-dark');
+                footer.classList.remove('bg-primary');
+                footer.classList.add('bg-dark');
+            }
+        }
+
+        // Event listener za dugmadi
+        document.getElementById('theme1Btn').addEventListener('click', function () {
+            changeTheme('theme1');
+        });
+
+        document.getElementById('theme2Btn').addEventListener('click', function () {
+            changeTheme('theme2');
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+@model KomsijaProjekat.Models.Car
+
+@{
+    ViewBag.Title = "Delete Car";
+}
+
+<h2>Delete Car</h2>
+
+<h3>Are you sure you want to delete this car?</h3>
+<div>
+    <h4>@Model.Model</h4>
+    <p>Year: @Model.Year</p>
+    <!-- Provera da li Brand nije null -->
+    <p>Brand: @(Model.Brand != null ? Model.Brand.Name : "No Brand")</p>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+}

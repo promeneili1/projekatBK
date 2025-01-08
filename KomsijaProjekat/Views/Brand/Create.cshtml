@@ -1,0 +1,21 @@
+@model KomsijaProjekat.Models.Brand
+
+@{
+    ViewBag.Title = "Create Brand";
+}
+
+<h2>Create Brand</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken() <!-- Anti-Forgery Token se dodaje ovde -->
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Name)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+}
