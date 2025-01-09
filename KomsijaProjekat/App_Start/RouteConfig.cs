@@ -38,6 +38,11 @@ namespace KomsijaProjekat
                 url: "car",
                 defaults: new { controller = "Car", action = "Car" }
             );
+            routes.MapRoute(
+                name: "Product",
+                url: "product",
+                defaults: new { controller = "Product", action = "Product" }
+            );
 
             routes.MapRoute(
                 name: "Brand",

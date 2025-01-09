@@ -4,10 +4,12 @@ namespace ProjekatKomsija.Controllers
 {
     public class IndexController : Controller
     {
+
+
   
         public ActionResult Index()
         {
-            return File(Server.MapPath("~/Views/Index/index.html"), "text/html");
+            return File(Server.MapPath("~/Views/Index/index.cshtml"), "text/html");
         }
     }
 }

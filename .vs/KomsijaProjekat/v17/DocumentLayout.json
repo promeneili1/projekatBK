@@ -1,0 +1,394 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\controllers\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\controllers\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\repository\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\repository\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\repository\\brandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\repository\\brandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\views\\index\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\views\\index\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\views\\index\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\views\\index\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|c:\\users\\srdja\\onedrive\\desktop\\projekatbk\\komsijaprojekat\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635F7F1B-4548-43FE-8815-27935629ECA2}|KomsijaProjekat\\KomsijaProjekat.csproj|solutionrelative:komsijaprojekat\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BrandController.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\BrandController.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Controllers\\BrandController.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\BrandController.cs*",
+              "RelativeToolTip": "KomsijaProjekat\\Controllers\\BrandController.cs*",
+              "ViewState": "AgIAADsAAAAAAAAAAAAswE8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T18:31:45.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T18:30:38.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BrandRepository.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Repository\\BrandRepository.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Repository\\BrandRepository.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Repository\\BrandRepository.cs*",
+              "RelativeToolTip": "KomsijaProjekat\\Repository\\BrandRepository.cs*",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwC8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T17:23:32.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Repository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:27:32.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CarRepository.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Repository\\CarRepository.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Repository\\CarRepository.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Repository\\CarRepository.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Repository\\CarRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:02:17.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Models\\Brand.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Models\\Brand.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Models\\Brand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:12:52.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IndexController.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\IndexController.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Controllers\\IndexController.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\IndexController.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Controllers\\IndexController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:26:47.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Controllers\\CarController.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\CarController.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Controllers\\CarController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:15:27.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:14:31.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Models\\User.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Models\\User.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:24:56.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Repository\\IRepository.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Repository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Repository\\IRepository.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Repository\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:27:52.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwC0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:27:23.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Models\\Product.cs*",
+              "RelativeToolTip": "KomsijaProjekat\\Models\\Product.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:24:52.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Models\\Car.cs*",
+              "RelativeToolTip": "KomsijaProjekat\\Models\\Car.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:24:46.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\UserController.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAwwC0AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:15:50.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:22:22.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Views\\Index\\index.html",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Views\\Index\\index.html",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Views\\Index\\index.html",
+              "RelativeToolTip": "KomsijaProjekat\\Views\\Index\\index.html",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAIAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-08T14:18:46.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "KomsijaProjekat\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T15:18:32.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Views\\Index\\index.css",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Views\\Index\\index.css",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Views\\Index\\index.css",
+              "RelativeToolTip": "KomsijaProjekat\\Views\\Index\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-08T15:16:52.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Web.config",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Web.config",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Web.config",
+              "RelativeToolTip": "KomsijaProjekat\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-08T14:34:13.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\packages.config",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\packages.config",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\packages.config",
+              "RelativeToolTip": "KomsijaProjekat\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-08T14:34:12.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Global.asax.cs",
+              "RelativeDocumentMoniker": "KomsijaProjekat\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\srdja\\OneDrive\\Desktop\\projekatBK\\KomsijaProjekat\\Global.asax.cs",
+              "RelativeToolTip": "KomsijaProjekat\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T14:34:05.377Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

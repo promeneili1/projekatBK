@@ -1,4 +1,5 @@
-﻿using KomsijaProjekat.Models;
+﻿using KomsijaProjekat.Authorize;
+using KomsijaProjekat.Models;
 using KomsijaProjekat.Repository;
 using System.Web.Mvc;
 
@@ -28,7 +29,8 @@ namespace KomsijaProjekat.Controllers
 
         // POST: Brand/Create
         [HttpPost]
-        [ValidateAntiForgeryToken] // Verifikacija Anti-Forgery tokena
+        [ValidateAntiForgeryToken]
+        [AuthorizeRole(UserRole.ADMIN)] // Verifikacija Anti-Forgery tokena
         public ActionResult Create(Brand brand)
         {
             if (ModelState.IsValid)
@@ -40,7 +42,7 @@ namespace KomsijaProjekat.Controllers
             return View(brand); // Ako podaci nisu validni, vrati korisnika na formu
         }
 
-        // GET: Brand/Edit/5
+        [AuthorizeRole(UserRole.ADMIN)]
         public ActionResult Edit(int id)
         {
             var brand = _brandRepository.GetById(id);
@@ -54,6 +56,7 @@ namespace KomsijaProjekat.Controllers
         // POST: Brand/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AuthorizeRole(UserRole.ADMIN)]
         public ActionResult Edit(int id, Brand brand)
         {
             if (ModelState.IsValid)
@@ -64,7 +67,7 @@ namespace KomsijaProjekat.Controllers
             return View(brand);
         }
 
-        // GET: Brand/Delete/5
+        [AuthorizeRole(UserRole.ADMIN)]
         public ActionResult Delete(int id)
         {
             var brand = _brandRepository.GetById(id);
@@ -78,6 +81,7 @@ namespace KomsijaProjekat.Controllers
         // POST: Brand/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [AuthorizeRole(UserRole.ADMIN)]
         public ActionResult DeleteConfirmed(int id)
         {
             _brandRepository.Delete(id);

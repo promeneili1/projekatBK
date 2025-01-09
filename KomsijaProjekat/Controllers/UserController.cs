@@ -1,4 +1,6 @@
-﻿using KomsijaProjekat.Models;
+﻿using KomsijaProjekat.Authorize;
+using KomsijaProjekat.Data;
+using KomsijaProjekat.Models;
 using KomsijaProjekat.Repository;
 using System.Linq;
 using System.Web.Mvc;
@@ -55,6 +57,7 @@ public class UserController : Controller
     }
 
     [HttpPost]
+    [AuthorizeRole(UserRole.ADMIN)]
     public ActionResult Create(User user)
     {
         if (ModelState.IsValid)
@@ -65,6 +68,7 @@ public class UserController : Controller
         return View(user);
     }
 
+    [AuthorizeRole(UserRole.ADMIN)]
     public ActionResult Edit(int id)
     {
         var user = _userRepository.GetById(id);
@@ -73,6 +77,8 @@ public class UserController : Controller
     }
 
     [HttpPost]
+    [AuthorizeRole(UserRole.ADMIN)]
+
     public ActionResult Edit(User user)
     {
         if (ModelState.IsValid)
@@ -84,6 +90,8 @@ public class UserController : Controller
     }
 
     [HttpGet]
+    [AuthorizeRole(UserRole.ADMIN)]
+
     public ActionResult Delete(int id)
     {
         var user = _userRepository.GetById(id);
@@ -93,7 +101,8 @@ public class UserController : Controller
 
     // POST Delete action (this is the Confirm Delete action)
     [HttpPost]
-    [ActionName("Delete")]  // Pomoću ActionName možete definisati isto ime akcije za GET i POST
+    [ActionName("Delete")]
+    [AuthorizeRole(UserRole.ADMIN)] // Pomoću ActionName možete definisati isto ime akcije za GET i POST
     public ActionResult DeleteConfirmed(int id)
     {
         var user = _userRepository.GetById(id);
@@ -103,40 +112,67 @@ public class UserController : Controller
         return RedirectToAction("Index");
     }
 
-    // GET: Login page
     public ActionResult Login()
-{
-    return View();
-}
-
-    
-
-    [HttpPost]
-    public ActionResult Login(string email)
     {
-        var user = _userRepository.GetAll().FirstOrDefault(u => u.Email == email);
-        if (user != null)
-        {
-            // Sačuvaj email korisnika u sesiju
-            Session["LoggedInUser"] = user.Email;
-            ViewBag.UserEmail = user.Email; // Dodaj email u ViewBag
-            return RedirectToAction("Index", "Index"); // Preusmeri na početnu stranicu
-        }
-
-        // Ako email nije pronađen, prikaži grešku
-        ViewBag.ErrorMessage = "Uneti email ne postoji u bazi.";
         return View();
     }
 
+    [HttpPost]
+    public ActionResult Login(string email, string password)
+    {
+        using (var context = new AppDbContext())
+        {
+            // Pronađi korisnika prema email-u i lozinci
+            var user = context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+
+            if (user != null)
+            {
+                // Postavljanje korisničkih podataka u sesiju
+                Session["UserId"] = user.Id;
+                Session["UserName"] = user.Name;
+                Session["UserRole"] = user.Role.ToString(); // Postavljanje uloge korisnika u sesiju kao string (npr. "USER", "ADMIN")
+
+                // Preusmeravanje korisnika na odgovarajući URL na osnovu uloge
+                if (user.Role == UserRole.ADMIN)
+                {
+                    return RedirectToAction("Index", "Index"); // Admin panel ili stranica
+                }
+                else if (user.Role == UserRole.USER)
+                {
+                    return RedirectToAction("Index", "Index"); // Proizvodi za korisnika
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Index"); // Defaultna stranica za guest
+                }
+            }
+            else
+            {
+                // Ako nije pronađen korisnik, postavljanje uloge na GUEST
+                Session["UserId"] = null;
+                Session["UserName"] = "Guest";
+                Session["UserRole"] = UserRole.GUEST.ToString();
+
+                // Preusmeravanje na početnu stranicu
+                return RedirectToAction("Index", "Index");
+            }
+        }
+    }
 
 
 
     public ActionResult Logout()
     {
         // Očisti sesiju
-        Session["LoggedInUser"] = null;
-        return RedirectToAction("Login");
+        Session.Clear();
+        Session["UserId"] = null;
+        Session["UserName"] = "Guest";
+        Session["UserRole"] = "GUEST"; // Postavljanje uloge na "GUEST"
+
+        // Preusmeravanje na početnu stranicu
+        return RedirectToAction("Index", "Index");
     }
+
 
 
 

@@ -1,4 +1,5 @@
-﻿using KomsijaProjekat.Data;
+﻿using KomsijaProjekat.Authorize;
+using KomsijaProjekat.Data;
 using KomsijaProjekat.Models;
 using System.Linq;
 using System.Web.Mvc;
@@ -28,14 +29,16 @@ namespace KomsijaProjekat.Controllers
         }
 
         // Create - Prikazuje formu za kreiranje proizvoda
+        [AuthorizeRole(UserRole.USER)] // Samo korisnik sa ulogom USER može da vidi ovu stranicu
         public ActionResult Create()
         {
             return View();
         }
 
-        // Create (POST) - Kreira novi proizvod
+        // Create (POST) - Kreira proizvod
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AuthorizeRole(UserRole.USER)] // Samo korisnik sa ulogom USER može da kreira proizvod
         public ActionResult Create(Product product)
         {
             if (!ModelState.IsValid)
@@ -49,6 +52,7 @@ namespace KomsijaProjekat.Controllers
         }
 
         // Edit - Prikazuje formu za izmenu proizvoda
+        [AuthorizeRole(UserRole.USER)] // Samo korisnik sa ulogom USER može da vidi ovu stranicu
         public ActionResult Edit(int id)
         {
             var product = _context.Products.SingleOrDefault(p => p.Id == id);
@@ -62,6 +66,7 @@ namespace KomsijaProjekat.Controllers
         // Edit (POST) - Spasi izmenjeni proizvod
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AuthorizeRole(UserRole.USER)] // Samo korisnik sa ulogom USER može da izmeni proizvod
         public ActionResult Edit(Product product)
         {
             if (!ModelState.IsValid)
@@ -84,6 +89,8 @@ namespace KomsijaProjekat.Controllers
         }
 
         // Delete - Prikazuje formu za brisanje proizvoda
+        [AuthorizeRole(UserRole.USER)]
+        [AuthorizeRole(UserRole.ADMIN)] // Samo korisnik sa ulogom USER može da vidi ovu stranicu
         public ActionResult Delete(int id)
         {
             var product = _context.Products.SingleOrDefault(p => p.Id == id);
@@ -97,6 +104,8 @@ namespace KomsijaProjekat.Controllers
         // Delete (POST) - Briše proizvod
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [AuthorizeRole(UserRole.USER)]
+        [AuthorizeRole(UserRole.ADMIN)] 
         public ActionResult DeleteConfirmed(int id)
         {
             var product = _context.Products.SingleOrDefault(p => p.Id == id);

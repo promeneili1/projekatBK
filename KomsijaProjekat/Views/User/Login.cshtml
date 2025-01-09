@@ -1,19 +1,32 @@
 @{
-    ViewBag.Title = "Login";
+    Layout = null;
 }
 
-<h2>Login</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
 
-@using (Html.BeginForm("Login", "User", FormMethod.Post))
-{
-    <div class="form-group">
-        <label for="email">Unesite svoj email:</label>
-        <input type="email" class="form-control" name="email" required />
-    </div>
-    <button type="submit" class="btn btn-primary">Prijavi se</button>
-}
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <p style="color: red;">@ViewBag.ErrorMessage</p>
+    }
 
-@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
-{
-    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
-}
+    <form method="post" action="/User/Login">
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" required />
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password" required />
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</body>
+</html>
