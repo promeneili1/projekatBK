@@ -24,15 +24,12 @@ using KomsijaProjekat.Models;
                 return View(cars);
             }
 
-            // Dodaj novu funkciju ako je potrebno
+            
             public ActionResult Add()
             {
                 return View();
             }
-
-
-
-        // GET: Car/Create
+        
         [AuthorizeRole(UserRole.ADMIN)]
         public ActionResult Create()
             {
@@ -41,8 +38,6 @@ using KomsijaProjekat.Models;
                 return View();
             }
 
-
-            // POST: Car/Create
             [HttpPost]
             [ValidateAntiForgeryToken]
         [AuthorizeRole(UserRole.ADMIN)]
@@ -54,12 +49,10 @@ using KomsijaProjekat.Models;
                     return RedirectToAction("Index");
                 }
 
-                // Ako model nije validan, vraćamo brendove u dropdown
                 ViewBag.Brands = new SelectList(_brandRepository.GetAll(), "Id", "Name", car.BrandId);
                 return View(car);
             }
 
-        // GET: Car/Edit/5
         [AuthorizeRole(UserRole.ADMIN)]
         public ActionResult Edit(int id)
             {
@@ -73,7 +66,6 @@ using KomsijaProjekat.Models;
                 return View(car);
             }
 
-            // POST: Car/Edit/5
             [HttpPost]
             [ValidateAntiForgeryToken]
         [AuthorizeRole(UserRole.ADMIN)]
@@ -81,12 +73,11 @@ using KomsijaProjekat.Models;
             {
                 if (ModelState.IsValid)
                 {
-                    car.Id = id; // Postavljamo ID da bi ažurirali postojeći entitet
+                    car.Id = id; 
                     _carRepository.Update(car);
                     return RedirectToAction("Index");
                 }
 
-                // Ako model nije validan, vraćamo brendove u dropdown
                 ViewBag.Brands = new SelectList(_brandRepository.GetAll(), "Id", "Name", car.BrandId);
                 return View(car);
             }
@@ -103,7 +94,6 @@ using KomsijaProjekat.Models;
                 return View(car);
             }
 
-            // POST: Car/Delete/5
             [HttpPost]
             [ValidateAntiForgeryToken]
             [AuthorizeRole(UserRole.ADMIN)] 

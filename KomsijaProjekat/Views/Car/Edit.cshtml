@@ -25,8 +25,8 @@
     <div class="form-group">
         <label for="BrandId">Brand</label>
         @Html.DropDownListFor(model => model.BrandId,
-            (SelectList)ViewBag.Brands,  // Cast to SelectList
-            "Select Brand", // Default prompt text
+            (SelectList)ViewBag.Brands,  
+            "Select Brand", 
             new { @class = "form-control" })
         @Html.ValidationMessageFor(model => model.BrandId)
     </div>

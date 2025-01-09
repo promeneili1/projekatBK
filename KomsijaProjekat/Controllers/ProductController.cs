@@ -28,37 +28,32 @@ namespace KomsijaProjekat.Controllers
         // Index - Lista svih proizvoda
         public ActionResult Index(int? page)
         {
-            var pageNumber = page ?? 1; // Ako nije prosleđena stranica, koristi prvu
-            int pageSize = 4; // Broj proizvoda po stranici
+            var pageNumber = page ?? 1;
+            int pageSize = 4; 
 
-            var products = _context.Products.OrderBy(p => p.Name).ToList(); // Ako treba, dodajte sortiranje
+            var products = _context.Products.OrderBy(p => p.Name).ToList(); 
 
             var totalItems = products.Count();
             var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
 
             var productsForPage = products.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
 
-            // Podesite ViewBag vrednosti za paginaciju
+            
             ViewBag.CurrentPage = pageNumber;
             ViewBag.TotalPages = totalPages;
 
-            return View(productsForPage); // Prosledjujemo samo proizvode za trenutnu stranicu
+            return View(productsForPage); 
         }
 
-
-
-
-        // Create - Prikazuje formu za kreiranje proizvoda
-        [AuthorizeRole(UserRole.USER)] // Samo korisnik sa ulogom USER može da vidi ovu stranicu
+        [AuthorizeRole(UserRole.USER)] 
         public ActionResult Create()
         {
             return View();
         }
 
-        // Create (POST) - Kreira proizvod
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [AuthorizeRole(UserRole.USER)] // Samo korisnik sa ulogom USER može da kreira proizvod
+        [AuthorizeRole(UserRole.USER)] 
         public ActionResult Create(Product product)
         {
             if (!ModelState.IsValid)
@@ -71,8 +66,7 @@ namespace KomsijaProjekat.Controllers
             return RedirectToAction("Index");
         }
 
-        // Edit - Prikazuje formu za izmenu proizvoda
-        [AuthorizeRole(UserRole.USER)] // Samo korisnik sa ulogom USER može da vidi ovu stranicu
+        [AuthorizeRole(UserRole.USER)] 
         public ActionResult Edit(int id)
         {
             var product = _context.Products.SingleOrDefault(p => p.Id == id);
@@ -83,10 +77,9 @@ namespace KomsijaProjekat.Controllers
             return View(product);
         }
 
-        // Edit (POST) - Spasi izmenjeni proizvod
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [AuthorizeRole(UserRole.USER)] // Samo korisnik sa ulogom USER može da izmeni proizvod
+        [AuthorizeRole(UserRole.USER)] 
         public ActionResult Edit(Product product)
         {
             if (!ModelState.IsValid)
@@ -108,9 +101,8 @@ namespace KomsijaProjekat.Controllers
             return RedirectToAction("Index");
         }
 
-        // Delete - Prikazuje formu za brisanje proizvoda
+        
         [AuthorizeRole(UserRole.USER)]
-        // Samo korisnik sa ulogom USER može da vidi ovu stranicu
         public ActionResult Delete(int id)
         {
             var product = _context.Products.SingleOrDefault(p => p.Id == id);
@@ -121,7 +113,6 @@ namespace KomsijaProjekat.Controllers
             return View(product);
         }
 
-        // Delete (POST) - Briše proizvod
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [AuthorizeRole(UserRole.USER)]

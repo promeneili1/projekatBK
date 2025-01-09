@@ -14,32 +14,29 @@ namespace KomsijaProjekat.Controllers
             _brandRepository = new BrandRepository();
         }
 
-        // GET: Brand
         public ActionResult Index()
         {
             var brands = _brandRepository.GetAll();
             return View(brands);
         }
 
-        // GET: Brand/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Brand/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [AuthorizeRole(UserRole.ADMIN)] // Verifikacija Anti-Forgery tokena
+        [AuthorizeRole(UserRole.ADMIN)] 
         public ActionResult Create(Brand brand)
         {
             if (ModelState.IsValid)
             {
                 _brandRepository.Add(brand);
-                return RedirectToAction("Index"); // Preusmeravanje na listu brandova (ako postoji)
+                return RedirectToAction("Index"); 
             }
 
-            return View(brand); // Ako podaci nisu validni, vrati korisnika na formu
+            return View(brand); 
         }
 
         [AuthorizeRole(UserRole.ADMIN)]
@@ -53,7 +50,7 @@ namespace KomsijaProjekat.Controllers
             return View(brand);
         }
 
-        // POST: Brand/Edit/5
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         [AuthorizeRole(UserRole.ADMIN)]
@@ -78,7 +75,7 @@ namespace KomsijaProjekat.Controllers
             return View(brand);
         }
 
-        // POST: Brand/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [AuthorizeRole(UserRole.ADMIN)]

@@ -6,17 +6,16 @@
     <title>Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* CSS za slike u karticama */
+        
         .card-img-top {
             width: 100%;
-            height: 200px; /* Ograničava visinu slike */
-            object-fit: cover; /* Prilagođava sliku tako da zauzme celu veličinu kutije bez distorzije */
+            height: 200px; 
+            object-fit: cover; 
         }
     </style>
 </head>
 <body id="body" class="bg-light text-dark">
 
-    <!-- Navigacija sa dugmadi za promenu teme -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="/Index/Index">My App</a>
@@ -25,33 +24,27 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <!-- Linkovi ka ostalim stranicama -->
+                   
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/About">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="/Car">Cars</a></li>
                     <li class="nav-item"><a class="nav-link" href="/Brand">Brands</a></li>
                     <li class="nav-item"><a class="nav-link" href="/Product">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="/User">Users</a></li>
-
-                    <!-- Provera da li je korisnik ulogovan -->
-                    <!-- Prikaz email-a ulogovanog korisnika -->
                     <li class="nav-item">
                         <span class="navbar-text ms-3 text-success">
-                            <!-- Prikaz email-a korisnika -->
+                            
                         </span>
                     </li>
-                    <!-- Logout dugme -->
+                   
                     <li class="nav-item">
                         <a class="nav-link" href="/User/Logout">Logout</a>
                     </li>
 
-                    <!-- Ako nije ulogovan, prikazuje Login dugme -->
                     <li class="nav-item">
                         <a class="nav-link" href="/User/Login">Login</a>
                     </li>
 
-
-                    <!-- Dugmadi za promenu teme -->
                     <li class="nav-item">
                         <button id="theme1Btn" class="btn btn-light me-2" onclick="changeTheme('theme1')">Tema 1</button>
                     </li>
@@ -73,7 +66,7 @@
 
     <section class="py-5">
         <div class="container">
-            <!-- Input za pretragu -->
+    
             <div class="row mb-4">
                 <div class="col">
                     <input type="text" id="searchInput" class="form-control" placeholder="Search by name" oninput="filterCards()">
@@ -143,22 +136,22 @@
             }
         }
 
-        // Funkcija za filtriranje kartica prema imenu
+        
         function filterCards() {
             const searchQuery = document.getElementById('searchInput').value.toLowerCase();
-            const cards = document.querySelectorAll('.card'); // Svi elementi sa klasom 'card'
+            const cards = document.querySelectorAll('.card'); 
 
             cards.forEach(card => {
-                const cardTitle = card.querySelector('.card-title').textContent.toLowerCase(); // Naslov kartice
+                const cardTitle = card.querySelector('.card-title').textContent.toLowerCase(); 
                 if (cardTitle.includes(searchQuery)) {
-                    card.style.display = 'block'; // Prikazivanje kartice ako naslov sadrži pretragu
+                    card.style.display = 'block'; 
                 } else {
-                    card.style.display = 'none'; // Skrivanje kartice ako naslov ne sadrži pretragu
+                    card.style.display = 'none'; 
                 }
             });
         }
 
-        // Event listener za dugmadi
+        
         document.getElementById('theme1Btn').addEventListener('click', function () {
             changeTheme('theme1');
         });

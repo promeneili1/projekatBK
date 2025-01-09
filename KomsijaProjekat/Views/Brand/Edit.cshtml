@@ -8,7 +8,7 @@
 
 @using (Html.BeginForm())
 {
-    @Html.AntiForgeryToken() <!-- Dodaj Anti-Forgery Token -->
+    @Html.AntiForgeryToken() 
 
     @Html.HiddenFor(model => model.Id)
     <div class="form-group">

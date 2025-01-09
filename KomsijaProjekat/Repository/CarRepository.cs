@@ -47,11 +47,6 @@ namespace KomsijaProjekat.Repository
 
             return cars;
         }
-
-        
-
-
-
         public void Update(Car entity)
         {
             _context.Entry(entity).State = System.Data.Entity.EntityState.Modified;

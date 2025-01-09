@@ -16,7 +16,7 @@ namespace KomsijaProjekat.Authorize
 
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
-            // Proverava da li postoji korisnička uloga u sesiji
+            
             var userRole = httpContext.Session["UserRole"]?.ToString();
 
             if (Enum.TryParse(userRole, out UserRole role))
@@ -28,10 +28,10 @@ namespace KomsijaProjekat.Authorize
 
         protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
         {
-            // Ako korisnik nije autorizovan, umesto preusmeravanja prikazujemo poruku na trenutnoj stranici
+            
             filterContext.Result = new ViewResult
             {
-                ViewName = "Unauthorized", // Ako imate View sa imenom "Unauthorized"
+                ViewName = "Unauthorized", 
                 ViewData = new ViewDataDictionary
                 {
                     { "ErrorMessage", "Niste autorizovani za ovu akciju." }

@@ -20,9 +20,6 @@ public class UserController : Controller
         return View(users);
     }
 
-   
-
-    // Dodavanje korisnika
     [HttpPost]
     public ActionResult Add(User user)
     {
@@ -34,17 +31,14 @@ public class UserController : Controller
         return View(user);
     }
 
-
     public ActionResult GetUserByEmail(string email)
     {
-        var user = _userRepository.GetAll().FirstOrDefault(u => u.Email == email); // Traži korisnika sa datim email-om
+        var user = _userRepository.GetAll().FirstOrDefault(u => u.Email == email); 
         if (user != null)
         {
-            // Ako korisnik postoji, možemo ga proslediti na view
-            return View(user); // Ovde se može proslediti korisnik u view, ako je potrebno
+            return View(user); 
         }
 
-        // Ako korisnik nije pronađen
         ViewBag.ErrorMessage = "Korisnik sa tim email-om ne postoji.";
         return View();
     }
@@ -99,10 +93,9 @@ public class UserController : Controller
         return View(user);
     }
 
-    // POST Delete action (this is the Confirm Delete action)
     [HttpPost]
     [ActionName("Delete")]
-    [AuthorizeRole(UserRole.ADMIN)] // Pomoću ActionName možete definisati isto ime akcije za GET i POST
+    [AuthorizeRole(UserRole.ADMIN)] 
     public ActionResult DeleteConfirmed(int id)
     {
         var user = _userRepository.GetById(id);
@@ -122,54 +115,49 @@ public class UserController : Controller
     {
         using (var context = new AppDbContext())
         {
-            // Pronađi korisnika prema email-u i lozinci
+           
             var user = context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
 
             if (user != null)
             {
-                // Postavljanje korisničkih podataka u sesiju
+             
                 Session["UserId"] = user.Id;
                 Session["UserName"] = user.Name;
-                Session["UserRole"] = user.Role.ToString(); // Postavljanje uloge korisnika u sesiju kao string (npr. "USER", "ADMIN")
+                Session["UserRole"] = user.Role.ToString(); 
 
-                // Preusmeravanje korisnika na odgovarajući URL na osnovu uloge
                 if (user.Role == UserRole.ADMIN)
                 {
-                    return RedirectToAction("Index", "Index"); // Admin panel ili stranica
+                    return RedirectToAction("Index", "Index"); 
                 }
                 else if (user.Role == UserRole.USER)
                 {
-                    return RedirectToAction("Index", "Index"); // Proizvodi za korisnika
+                    return RedirectToAction("Index", "Index"); 
                 }
                 else
                 {
-                    return RedirectToAction("Index", "Index"); // Defaultna stranica za guest
+                    return RedirectToAction("Index", "Index"); 
                 }
             }
             else
             {
-                // Ako nije pronađen korisnik, postavljanje uloge na GUEST
+   
                 Session["UserId"] = null;
                 Session["UserName"] = "Guest";
                 Session["UserRole"] = UserRole.GUEST.ToString();
 
-                // Preusmeravanje na početnu stranicu
                 return RedirectToAction("Index", "Index");
             }
         }
     }
 
-
-
     public ActionResult Logout()
     {
-        // Očisti sesiju
+        
         Session.Clear();
         Session["UserId"] = null;
         Session["UserName"] = "Guest";
-        Session["UserRole"] = "GUEST"; // Postavljanje uloge na "GUEST"
+        Session["UserRole"] = "GUEST"; 
 
-        // Preusmeravanje na početnu stranicu
         return RedirectToAction("Index", "Index");
     }
 
