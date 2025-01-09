@@ -1,9 +1,5 @@
 @model IEnumerable<KomsijaProjekat.Models.Product>
 
-@{
-    ViewBag.Title = "Products";
-}
-
 <h2>Products</h2>
 
 <p>
@@ -34,3 +30,18 @@
         }
     </tbody>
 </table>
+
+<!-- Paginacija -->
+<div>
+    @if (ViewBag.CurrentPage > 1)
+    {
+        <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1 })">Previous</a>
+    }
+
+    <span>Page @ViewBag.CurrentPage of @ViewBag.TotalPages</span>
+
+    @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+    {
+        <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1 })">Next</a>
+    }
+</div>

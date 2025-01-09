@@ -60,6 +60,8 @@ C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\Microsoft.We
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\Newtonsoft.Json.Bson.dll
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\Newtonsoft.Json.dll
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\Owin.dll
+C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\PagedList.dll
+C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\PagedList.Mvc.dll
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\System.Buffers.dll
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\System.Memory.dll
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\System.Net.Http.Formatting.dll
@@ -83,6 +85,8 @@ C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\Microsoft.Ow
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\Microsoft.Owin.Cors.xml
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\Newtonsoft.Json.Bson.pdb
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\Newtonsoft.Json.Bson.xml
+C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\PagedList.xml
+C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\PagedList.Mvc.xml
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\System.Buffers.xml
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\System.Memory.xml
 C:\Users\srdja\OneDrive\Desktop\KomsijaProjekat\KomsijaProjekat\bin\System.Net.Http.Formatting.xml

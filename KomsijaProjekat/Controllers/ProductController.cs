@@ -3,6 +3,10 @@ using KomsijaProjekat.Data;
 using KomsijaProjekat.Models;
 using System.Linq;
 using System.Web.Mvc;
+using PagedList;
+using System;
+
+
 
 namespace KomsijaProjekat.Controllers
 {
@@ -22,11 +26,27 @@ namespace KomsijaProjekat.Controllers
         }
 
         // Index - Lista svih proizvoda
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            var products = _context.Products.ToList();
-            return View(products);
+            var pageNumber = page ?? 1; // Ako nije prosleđena stranica, koristi prvu
+            int pageSize = 4; // Broj proizvoda po stranici
+
+            var products = _context.Products.OrderBy(p => p.Name).ToList(); // Ako treba, dodajte sortiranje
+
+            var totalItems = products.Count();
+            var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+
+            var productsForPage = products.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+
+            // Podesite ViewBag vrednosti za paginaciju
+            ViewBag.CurrentPage = pageNumber;
+            ViewBag.TotalPages = totalPages;
+
+            return View(productsForPage); // Prosledjujemo samo proizvode za trenutnu stranicu
         }
+
+
+
 
         // Create - Prikazuje formu za kreiranje proizvoda
         [AuthorizeRole(UserRole.USER)] // Samo korisnik sa ulogom USER može da vidi ovu stranicu
@@ -90,7 +110,7 @@ namespace KomsijaProjekat.Controllers
 
         // Delete - Prikazuje formu za brisanje proizvoda
         [AuthorizeRole(UserRole.USER)]
-        [AuthorizeRole(UserRole.ADMIN)] // Samo korisnik sa ulogom USER može da vidi ovu stranicu
+        // Samo korisnik sa ulogom USER može da vidi ovu stranicu
         public ActionResult Delete(int id)
         {
             var product = _context.Products.SingleOrDefault(p => p.Id == id);
@@ -105,7 +125,7 @@ namespace KomsijaProjekat.Controllers
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [AuthorizeRole(UserRole.USER)]
-        [AuthorizeRole(UserRole.ADMIN)] 
+        
         public ActionResult DeleteConfirmed(int id)
         {
             var product = _context.Products.SingleOrDefault(p => p.Id == id);
